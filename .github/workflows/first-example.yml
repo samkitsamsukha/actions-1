@@ -9,11 +9,14 @@ jobs:
             - name: check out
               uses: actions/checkout@v4
 
-            - name: Welcome message
-              run: echo "My first github actions job"
+            - name: List and Read files
+              run: |
+                echo "My first github actions job"
+                ls -ltra
+                cat README.md
 
-            - name: List files
-              run: ls
+            - name: Generate ASCII Artwork
+              run: cowsay -f dragon "Run for cover, I am a dragon RAWR" >> dragon.txt
 
-            - name: Read files
-              run: cat README.md
+            # - name: Read files
+            #   run: cat README.md
