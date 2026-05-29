@@ -49,7 +49,7 @@ jobs:
                 name: dragontextfile
                 
             - name: read file
-              run: cat dragon.txt
+              run: cat drgon.txt
 
             - name: deploy
               run: echo Deploying...
